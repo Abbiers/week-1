@@ -1,50 +1,204 @@
 <!doctype html>
-<html>
+<html style="height: 100%">
+
 <head>
-<meta charset="UTF-8">
-<link rel="stylesheet" href="css/style1.css">
-<title>Setions</title>
+    <title>A Personal Website</title>
+    <link href="style.css" rel="stylesheet">
+    <link href=" http://fonts.googleapis.com/css?family=Open+Sans:300,600" s rel='stylesheet' type='text/css'>
+</head>
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+    body {
+        font-family: "Lato", sans-serif;
+    }
+
+    .sidenav {
+        height: 100%;
+        width: 0;
+        position: fixed;
+        z-index: 1;
+        top: 0;
+        left: 0;
+        background-color: aquamarine;
+        overflow-x: hidden;
+        transition: 0.5s;
+        padding-top: 60px;
+    }
+
+    .sidenav a {
+        padding: 8px 8px 8px 32px;
+        text-decoration: none;
+        font-size: 25px;
+        color: #818181;
+        display: block;
+        transition: 0.3s;
+    }
+
+    .sidenav a:hover {
+        color: #f1f1f1;
+    }
+
+    .sidenav .closebtn {
+        position: absolute;
+        top: 0;
+        right: 25px;
+        font-size: 36px;
+        margin-left: 50px;
+    }
+
+    @media screen and (max-height: 450px) {
+        .sidenav {
+            padding-top: 15px;
+        }
+        .sidenav a {
+            font-size: 18px;
+        }
+    }
+</style>
 </head>
 
 <body>
-<section id="s1">
-		<article>
-			
-			<h1>The Begining</h1>
-			<p>Onnce apon a time in a small village in Japan, there was a girl name Kayokeo, who had a dream to dance for the world.
-			She longed day dreamed about daning for the people.she practied everyday unil the sunset set at 5:30</p>
-		</article>
-	</section>
-	
-	<section id="s2">
-		<article>
-			<h1>The Middle </h1>
-			<p>One day after school she saw a sign up paper for a school talent show. but when she went to go sign up she got pushed away by one biggger girl, she was the most popular girl in her grade, she also had a group of at least 4 or 5 other girls crowad around here, the bigger girl laugh and told her that she shouldn't even bother sign she was ever a good dancer. the girled got up and ran off crying.The next day the girl went back in scetrecy and signed up for the talent show. and after school she went straight home and practiced her heart  and feet until she could do no more. for 1 whole week she practiced day and night, everywhere she went she practied. </p>
-		</article>
-	</section>
-	
-	<section id="s3">
-		<article>
-			<h1>The End </h1>
-			<p>Then a week passed and it was time she was so nerves about the whole talent show. she was worried she won't be worth enought to dance in front of her whole claas but the whole school. her turn was coming up and the nerves were kicking, then by surpied her father came back staged and told her it doesn't matter if you mess up as long as you have fun and enjoy you'll do amazing. So when she got a stage she dance like nobody was watching, the dance was wonderful, fun and creative </p>
 
-<p>I should be incapable of drawing a single stroke at the present moment; and yet I feel that I never was a greater artist than now.</p>
+    <div id="mySidenav" class="sidenav">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="graphic.html">Graphic</a>
+        <a href="print.html">Print</a>
+        <a href="contact.html">Contact</a>
+    </div>
 
 
-		</article>
-	</section>
-	
+    <span style="position: absolute; z-index: 999; font-size:x-large; top: 24px; left: 24px; cursor:pointer" onclick="openNav()">
+        <small>&#9776;</small> menu</span>
+
+    <script>
+        function openNav() {
+            document.getElementById("mySidenav").style.width = "250px";
+        }
+
+        function closeNav() {
+            document.getElementById("mySidenav").style.width = "0";
+        }
+    </script>
 
 
-<section id="s4">
-		<article>
-			<h1>The credit </h1>
-			<p>Thnak you for looking at my site hope you enjoyed </p>
+    <body style="height: 100%">
+        <div class="container ab-flex column middle center blue-bg" id="section-alpha">
+            <img src="logo.png" style="width: 200px">
+            <span class="name">Hello, I am
+                <span onclick="smoothScroll('section-beta')">Abby Morin</span>
+            </span>
+            <div class="bubbles-container">
+                <svg class="bubbles" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 701 1024" style="overflow: visible;">
 
-<p>I should be incapable of drawing a single stroke at the present moment; and yet I feel that I never was a greater artist than now.</p>
+                    <g class="bubbles-large" stroke-width="7">
+                        <g>
+                            <g transform="translate(10 940)">
+                                <circle cx="35" cy="35" r="35" />
+                            </g>
+                        </g>
+                        <g>
+                            <g transform="translate(373 940)">
+                                <circle cx="35" cy="35" r="35" />
+                            </g>
+                        </g>
+                        <g>
+                            <g transform="translate(408 940)">
+                                <circle cx="35" cy="35" r="35" />
+                            </g>
+                        </g>
+                        <g>
+                            <g transform="translate(621 940)">
+                                <circle cx="35" cy="35" r="35" />
+                            </g>
+                        </g>
+                        <g>
+                            <g transform="translate(179 940)">
+                                <circle cx="35" cy="35" r="35" />
+                            </g>
+                        </g>
+                    </g>
+
+                    <g class="bubbles-small" stroke-width="4">
+                        <g>
+                            <g transform="translate(147 984)">
+                                <circle cx="15" cy="15" r="15" />
+                            </g>
+                        </g>
+                        <g>
+                            <g transform="translate(255 984)">
+                                <circle cx="15" cy="15" r="15" />
+                            </g>
+                        </g>
+                        <g>
+                            <g transform="translate(573 984)">
+                                <circle cx="15" cy="15" r="15" />
+                            </g>
+                        </g>
+                        <g>
+                            <g transform="translate(429 984)">
+                                <circle cx="15" cy="15" r="15" />
+                            </g>
+                        </g>
+                        <g>
+                            <g transform="translate(91 984)">
+                                <circle cx="15" cy="15" r="15" />
+                            </g>
+                        </g>
+                        <g>
+                            <g transform="translate(640 984)">
+                                <circle cx="15" cy="15" r="15" />
+                            </g>
+                        </g>
+                        <g>
+                            <g transform="translate(321 984)">
+                                <circle cx="15" cy="15" r="15" />
+                            </g>
+                        </g>
+                        <g>
+                            <g transform="translate(376 984)">
+                                <circle cx="15" cy="15" r="15" />
+                            </g>
+                        </g>
+                        <g>
+                            <g transform="translate(376 984)">
+                                <circle cx="15" cy="15" r="15" />
+                            </g>
+                        </g>
+                        <g>
+                            <g transform="translate(497 984)">
+                                <circle cx="15" cy="15" r="15" />
+                            </g>
+                        </g>
+                    </g>
+
+                </svg>
+            </div>
+        </div>
+
+        <div class="container ab-flex column middle center" id="section-video">
+            this section will have a video
+        </div>
 
 
-		</article>
-	</section>
-</body>
+        <div class="container ab-flex row middle center" id="section-beta">
+            <div class="card ab-flex column">
+                Photo 1
+            </div>
+            <div class="card ab-flex column">
+                Photo 2
+            </div>
+            <div class="card ab-flex column">
+                Photo 3
+            </div>
+        </div>
+
+        <script src="script.js"></script>
+
+
+
+    </body>
+
 </html>
